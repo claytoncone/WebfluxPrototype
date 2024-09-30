@@ -1,0 +1,5 @@
+postalCode,country,addressLine1,addressLine2,city,state
+12345,USA,123 Main St,Apt 101,Anytown,CO
+12345,USA,456 Elm St,Apt 202,Othertown,CO
+54321,USA,321 Main St,Apt 101,Someplace,CA
+23456,USA,654 Elm St,Apt 202,Someotherplace,CA
