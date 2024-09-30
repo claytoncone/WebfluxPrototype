@@ -3,8 +3,6 @@ package org.webflux.microservice.rest.api;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
-import java.time.LocalDateTime;
-
 @Data
 @Accessors(chain = true)
 public class Client {

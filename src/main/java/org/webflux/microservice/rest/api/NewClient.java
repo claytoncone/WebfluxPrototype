@@ -20,4 +20,6 @@ public class NewClient {
     @Size(max = 255)
     private String company;
 
+    private Address address;
+    private Contact contactInfo;
 }

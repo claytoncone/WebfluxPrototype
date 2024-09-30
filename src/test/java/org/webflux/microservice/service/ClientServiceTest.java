@@ -43,8 +43,8 @@ class ClientServiceTest extends BaseRepositoryTest {
         clientEntity.setAddress(address);
         ContactEntity contact = new ContactEntity();
         contact.setEmail("info@cartercenter.org");
-        contact.setPhone("(404) 420-5100");
-        contact.setFax("(404) 420-5109");
+        contact.setPhone("4044205100");
+        contact.setFax("4044205109");
         clientEntity.setContactInfo(contact);
 
         // When
