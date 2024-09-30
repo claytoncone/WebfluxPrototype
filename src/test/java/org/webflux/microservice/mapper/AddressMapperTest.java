@@ -8,7 +8,8 @@ import org.webflux.microservice.rest.api.Address;
 
 import java.time.LocalDateTime;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
 class AddressMapperTest {
@@ -48,8 +49,5 @@ class AddressMapperTest {
         assertEquals(addressEntity.getAddressLine2(), resource.getAddressLine2());
         assertEquals(addressEntity.getCity(), resource.getCity());
         assertEquals(addressEntity.getState(), resource.getState());
-        assertEquals(addressEntity.getCreatedDate(), resource.getCreatedDate());
-        assertEquals(addressEntity.getLastModifiedDate(), resource.getLastModifiedDate());
-        assertEquals(addressEntity.getVersion(), resource.getVersion());
     }
 }

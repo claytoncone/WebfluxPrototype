@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.webflux.microservice.model.AddressEntity;
 import org.webflux.microservice.model.ClientEntity;
 import org.webflux.microservice.model.ContactEntity;
+import org.webflux.microservice.rest.api.Address;
 import org.webflux.microservice.rest.api.Client;
 import org.webflux.microservice.rest.api.NewClient;
 
@@ -79,7 +80,8 @@ class ClientMapperTest {
         resource.setSurname("Doe");
         resource.setTitle("Little Boss");
         resource.setCompany("Army Surplus");
-        resource.setAddressId(1L);
+        resource.setAddress(new Address());
+        resource.getAddress().setId(1L);
 
         ClientEntity clientEntity = mapper.toModel(resource);
 
@@ -89,6 +91,6 @@ class ClientMapperTest {
         assertEquals(resource.getSurname(), clientEntity.getSurname());
         assertEquals(resource.getTitle(), clientEntity.getTitle());
         assertEquals(resource.getCompany(), clientEntity.getCompany());
-        assertEquals(resource.getAddressId(), clientEntity.getAddressId());
+        assertEquals(resource.getAddress().getId(), clientEntity.getAddressId());
     }
 }

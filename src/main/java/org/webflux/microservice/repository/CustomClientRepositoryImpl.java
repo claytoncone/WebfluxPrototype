@@ -3,7 +3,6 @@ package org.webflux.microservice.repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.r2dbc.core.DatabaseClient;
 import org.springframework.stereotype.Component;
-import org.webflux.microservice.model.ClientEntity;
 import reactor.core.publisher.Mono;
 
 @Component
