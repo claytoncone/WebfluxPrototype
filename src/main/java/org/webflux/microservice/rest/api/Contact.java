@@ -4,11 +4,14 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 @Data
+@RequiredArgsConstructor
 public class Contact {
-    @NotNull
-    private Long clientId;
+    public Contact(String email) {
+        this.email = email;
+    }
     @NotBlank
     @Email
     private String email;
